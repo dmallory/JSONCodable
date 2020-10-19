@@ -6,6 +6,8 @@
 //  Copyright © 2015 matthewcheok. All rights reserved.
 //
 
+import Foundation
+
 // convenience protocol
 
 public protocol JSONCodable: JSONEncodable, JSONDecodable {}

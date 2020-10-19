@@ -6,6 +6,8 @@
 //  Copyright © 2015 matthewcheok. All rights reserved.
 //
 
+import Foundation
+
 // Converting between types
 
 public struct JSONTransformer<EncodedType, DecodedType>: CustomStringConvertible {

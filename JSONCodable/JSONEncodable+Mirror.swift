@@ -6,6 +6,8 @@
 //
 //
 
+import Foundation
+
 public extension Mirror {
     /**
      Builds an array of all properties from current class and all super classes

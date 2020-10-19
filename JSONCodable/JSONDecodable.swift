@@ -6,6 +6,8 @@
 //  Copyright © 2015 matthewcheok. All rights reserved.
 //
 
+import Foundation
+
 // Decoding Errors
 
 public enum JSONDecodableError: Error, CustomStringConvertible {
@@ -97,7 +99,7 @@ public class JSONDecoder {
     /// Get index from `"[0]"` formatted `String`
     /// returns `nil` if invalid format (i.e. no brackets or contents not an `Int`)
     internal func parseArrayIndex(_ key:String) -> Int? {
-        var chars = key.characters
+        var chars = Substring(key)
         let first = chars.popFirst()
         let last = chars.popLast()
         if first == "[" && last == "]" {
